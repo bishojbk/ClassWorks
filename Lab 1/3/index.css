@@ -1,0 +1,27 @@
+*{
+    margin:auto;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(5, 61, 83);    
+    text-align: right;
+    padding: 10px;
+}
+.navbar a{
+    font-size: large;
+    color:beige;
+    padding: 15px;
+    text-decoration-style: none;
+    
+}
+a:hover{
+    color:rgb(255, 102, 0);
+    font-weight: bold;
+}
+.navbar h2{
+    padding-top: 2%;
+    color: rgb(0, 178, 223);
+    text-align: left;
+}

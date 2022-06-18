@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: rgb(0, 99, 124);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: rgb(48, 56, 83);
+            padding: 20px;
+
+        }
+
+        nav a {
+            color: aliceblue;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        nav ul li {
+            margin-top: 10px;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #d3ffe2;
+            height: 300px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h2>Header</h2>
+    </header>
+
+    <section>
+        <nav>
+            <h2 style="color:cornflowerblue">Navbar</h2>
+            <ul>
+                <li><a href="#">nav1</a></li>
+                <li><a href="#">nav2</a></li>
+                <li><a href="#">nav3</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Title of content</h1>
+            <p>content goes here...content goes here...content goes here...content goes here...content goes
+                here...content goes here...content goes here...</p>
+            <p>content goes here...content goes here...content goes here...content goes here...content goes here...
+            </p>
+        </article>
+    </section>
+
+</body>
+
+</html>

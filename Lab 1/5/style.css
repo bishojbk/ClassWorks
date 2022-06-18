@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(44, 40, 40);
+}
+.formData {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    background-color: darkcyan;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 2%;
+    border-radius: 20px;
+    border-color:rgb(255, 255, 255);
+}
+
+form {
+    font-size: 30px;
+    text-align: center;
+}
+
+form input {
+    margin-left: 10px;
+    font-size: 15px;
+}
+form label{
+    color: aliceblue;
+    font-size: medium;
+}
+#header{
+    margin-top: 8%;
+    margin-left: 1%;
+}
+h3{
+    color: rgb(49, 255, 255);
+    text-align: center;
+}
